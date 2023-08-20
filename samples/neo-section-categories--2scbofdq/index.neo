@@ -1,0 +1,76 @@
+-- title
+
+Neopolengine Categories
+
+-- h2
+
+Work In Progress
+
+I know I want categories. This is where I'm
+collecting my thoughts to decide how to 
+build the functionality 
+
+-- list
+
+- Send the full set of categories for every files
+so the template can choose which one to use
+
+- Generate categories so logic can be applied
+in the engine and the template can just
+render (something to be looked at later if
+optimization seems necessary)
+
+- Identify what position files are in different
+categories so previous/next links can 
+be generated. 
+
+- Setup previous/next links for each page. 
+Logic for that will start in the code and then
+check to see if there's an easy way to move
+to a config
+
+- Would have to encode logic to decide how
+prev/next works if a page is in multiple 
+categories
+
+- Could actually apply previous/next
+based off template, e.g. if it's a `neodocs``
+file the prev next comes from a list
+dedicated to that. 
+
+- Would want a flag to prevent files from 
+showing up in a category list (e.g. the home pages)
+Or, maybe the idea would be to split out to 
+a different template? That's probably easier to 
+deal with. 
+
+- Feels like using the `-- type`` attribute
+as the base makes the most sense. 
+
+- Could get fancy later and do something like
+setting a cookie or query string if someone
+hits a page from a category listing and
+then dynamically switch the prev/next to 
+be in that category instead of the overall type. 
+
+- That would deal with multiple categories too.
+
+- Consider setting up an explicit order config. 
+For example, to setup the first N number of pages
+in the `neodocs`` then let the rest of them filter
+in? Or, would the list just be explicit? probably
+the later
+
+
+
+-- categories
+-- Nepolengine 
+
+-- metadata
+-- date: 2023-07-15 15:23:08
+-- id: 2scbofdq
+-- site: aws
+-- type: post
+-- status: draft 
+
+

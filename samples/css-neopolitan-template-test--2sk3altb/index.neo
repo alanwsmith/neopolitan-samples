@@ -1,0 +1,43 @@
+-- title
+
+Neopolitan No CSS Template Test
+
+This template has no CSS in it. Everything
+is applied from the source content file itself. 
+
+-- css
+
+body {
+	background-color: #472382;
+	color: #727442;
+}
+
+-- todo
+
+[] Add a feature to show the css
+in a code block directly on the page. 
+
+
+-- opendiv
+
+-- p
+
+this is some text
+
+
+-- closediv
+
+
+
+
+-- categories
+-- Neopolitan 
+
+-- metadata
+-- date: 2023-07-09 01:45:10
+-- id: 2sk3altb
+-- site: aws
+-- type: no_css 
+-- status: draft 
+
+

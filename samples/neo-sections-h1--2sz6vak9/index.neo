@@ -1,0 +1,50 @@
+-- title
+
+Neopolitan H1 Section
+
+-- code/
+
+-- h2
+-- id: papa 
+-- class: quebec romeo
+
+Alfa Bravo Charlie
+
+Delta echo foxtrot golf
+
+Hotel india juliett
+
+-- /code
+
+
+-- h2
+
+Reference Output
+
+-- code/ 
+-- html
+
+<hgroup id="papa" class="quebec romeo">
+  <h1>Alfa Bravo Charlie</h1>
+  <p>Delta echo foxtrot golf</p>
+  <p>Hotel india juliett</p>
+</hgroup>
+
+-- /code
+
+
+
+-- categories
+-- Neopolitan 
+
+-- groups
+-- Neopolitan Sections
+
+-- metadata
+-- date: 2023-07-23 14:31:26
+-- id: 2sz6vak9
+-- site: aws
+-- type: post
+-- status: published 
+
+

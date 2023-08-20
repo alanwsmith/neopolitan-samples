@@ -1,0 +1,40 @@
+-- title
+
+Neopolitan Sections: bookmark 
+
+-- section/
+-- class: neoexample flow
+
+-- bookmark
+-- neoexample
+-- title: Delta Kilo Tango 
+-- link: https://www.example.com/
+
+A stiff cord will do to fasten your shoe. Ducks 
+fly north but lack a compass.
+
+
+-- /section
+
+
+-- notes
+
+- These are like `ref`` sections but they stick in the 
+specific place they are put in the overall flow
+of the document
+
+
+-- categories
+-- Neopolitan 
+
+-- groups
+-- Neopolitan Sections
+
+-- metadata
+-- date: 2023-08-03 01:10:06
+-- id: 2tsbpmdz
+-- site: aws
+-- type: neodocs 
+-- status: published 
+
+

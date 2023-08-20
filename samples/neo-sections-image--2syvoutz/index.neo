@@ -1,0 +1,55 @@
+-- title
+
+Neopolitan Image Section
+
+-- image
+-- hackers-frame-000030324
+
+
+-- h2
+
+Details
+
+-- list
+
+- Currently the only thing in place is
+the `src`` for the image 
+
+- The first item is a basename that
+is used to search for the image and 
+create the full path which is passed to 
+the template
+
+- `--link`` (to be added) which will
+roll out to an link that wraps the image
+
+- Alt text is added via an `-- alt`` tag
+that works like standard attributes
+
+- GOAL: The text in the content area can be 
+used as a caption in a figure 
+
+
+
+-- warning
+
+this is still a work in progress
+
+
+
+-- categories
+-- Neopolitan  
+
+
+-- groups
+-- Neopolitan Sections
+
+
+-- metadata
+-- date: 2023-07-23 13:03:29
+-- id: 2syvoutz
+-- site: aws
+-- type: neodocs 
+-- status: draft 
+
+

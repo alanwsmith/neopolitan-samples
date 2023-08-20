@@ -1,0 +1,50 @@
+-- title
+
+Neopolitan Group Section
+
+-- warning
+
+This is still under construction. What's
+listed below is how I'm thinking it'll
+work once its done
+
+-- notes
+
+- The group section is used to create lists
+of cross links. 
+
+- This amounts to a way to setup related links
+
+- GOAL: for example this page has a `-- groups`neo`
+entry of `Neopolitan Sections`` which is on all the 
+other section pages. 
+
+- Links to all the other pages and generated 
+from that and sorted alphabetically
+
+- The current page is listed in the links but
+isn't linked
+
+- The name of the group is available for use
+as the title for a block that displays the links
+
+- This should also help limit the proliforation 
+of categories
+
+
+-- categories
+-- Neopolitan 
+
+
+-- groups
+-- Neopolitan Sections 
+
+
+-- metadata
+-- date: 2023-07-23 13:04:41
+-- id: 2syvxsad
+-- site: aws
+-- type: post
+-- status: draft 
+
+

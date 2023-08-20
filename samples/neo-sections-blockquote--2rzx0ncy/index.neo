@@ -1,0 +1,123 @@
+-- title
+
+Neopolitan Documentation: blockquote
+
+-- section/
+-- class: neoexamplewrapper 
+
+-- h2
+
+Basic Example
+
+-- blockquote
+-- neoexample
+
+Under the bludgeonings of chance
+
+My head is bloody, but unbowed
+
+-- /section
+
+
+-- section/
+-- class: neoexamplewrapper
+
+-- h2
+
+With Attributes
+
+-- blockquote
+-- neoexample
+-- class: red_underline 
+
+Under the bludgeonings of chance
+
+My head is bloody, but unbowed
+
+-- /section
+
+
+-- section/
+-- class: neoexamplewrapper
+
+-- h2
+
+Attribution Example
+
+-- blockquote
+-- neoexample
+-- by: William Henley
+
+Under the bludgeonings of chance
+
+My head is bloody, but unbowed
+
+-- /section
+
+
+-- section/
+-- class: neoexamplewrapper
+
+-- h2
+
+Attribution And Citation Example
+
+-- blockquote
+-- neoexample
+-- by: William Henley
+-- source: Invictus
+
+Under the bludgeonings of chance
+
+My head is bloody, but unbowed
+
+-- /section
+
+
+-- section/
+-- class: neoexamplewrapper
+
+-- h2
+
+Attribution, Citation, And Link Example
+
+-- blockquote
+-- neoexample
+-- by: William Henley
+-- source: Invictus
+-- url: https://en.wikipedia.org/wiki/Invictus
+
+Under the bludgeonings of chance
+
+My head is bloody, but unbowed
+
+-- /section
+
+
+-- todo
+-- title: Examples To Complete
+
+[x] blockquote by itself
+
+[x] blockquote with attribution
+
+[x] blockquote with attribution and cite
+
+[x] blockquote with attribution, cite, and link
+
+
+
+-- categories
+-- Neopolitan 
+
+-- groups
+-- Neopolitan Sections
+
+-- metadata
+-- date: 2023-07-01 19:20:59
+-- id: 2rzx0ncy
+-- site: aws
+-- type: neodocs 
+-- status: published
+
+

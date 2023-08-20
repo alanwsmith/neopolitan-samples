@@ -1,0 +1,70 @@
+-- title
+
+Neopolitan Sections: hr
+
+
+-- section/
+-- class: neoexamplewrapper 
+
+-- h2
+
+Basic Example
+
+-- hr 
+-- neoexample
+
+-- /section
+
+
+-- section/
+-- class: neoexamplewrapper 
+
+-- h2
+
+With Attribute
+
+-- hr 
+-- neoexample
+-- class: bravo
+
+-- /section
+
+
+-- section/
+-- class: neoexamplewrapper 
+
+-- h2
+
+With Follow Up Content 
+
+
+-- hr 
+-- neoexample
+
+alfa bravo charlie
+
+-- /section
+
+
+-- notes
+
+- There's no style actually applied
+to the "With Attributes" example
+in the output. The example HTML
+is the only place that shows up.
+
+
+-- categories
+-- Neopolitan  
+
+-- groups
+-- Neopolitan Sections
+
+-- metadata
+-- date: 2023-08-13 18:48:04
+-- id: 2twvjkjl
+-- site: aws
+-- type: neodocs 
+-- status: published
+
+

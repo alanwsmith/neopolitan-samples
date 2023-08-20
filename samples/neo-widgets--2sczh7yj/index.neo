@@ -1,0 +1,34 @@
+-- title
+
+Neopolitan Widgets
+
+PLACEHOLDER
+
+-- list
+
+Goals:
+
+- Provide more intricate templating by sending 
+JSON directly
+
+- I'm thinking there wouldn't be any extra processing, 
+probably just a serialiation of the json that
+gets sent along with metadata about the file
+and maybe a global metadata set?
+
+- No external process in involved 
+
+
+
+-- categories
+-- Neopolitan  
+-- Neopolengine 
+
+-- metadata
+-- date: 2023-07-15 15:05:45
+-- id: 2sczh7yj
+-- site: aws
+-- type: post
+-- status: scratch
+
+

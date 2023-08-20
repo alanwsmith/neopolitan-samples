@@ -1,0 +1,109 @@
+-- title
+
+Neopolitan P paragraphs Section
+
+-- list
+
+- The `-- p`` token is used to make sections
+of paragraphs
+
+- Each paragraph in the document is turned into
+an HTML `&lt;p&gt;`html` tag
+
+- Paragraphs are separated by empty lines
+
+- Paragraph text can wrap lines and will
+continue to apply to the same output
+paragraph until an empty line is hit
+
+- TODO: Attributes applied to the `-- p`neo`
+section are applied to each paragraph 
+individually
+
+
+
+-- h2 
+
+Basic Example
+
+
+-- h3
+
+Neopolitan 
+
+-- code/
+
+-- p 
+
+The dirt piles were lines along the 
+road. The door was barred, locked, and 
+bolted.
+
+The doorknob was made of bright clean.
+brass. The drip of the rain made a 
+pleasant sound.
+
+-- /code
+
+
+-- h3
+
+HTML
+
+-- code/
+
+<p>The dirt piles were lines along the 
+road. The door was barred, locked, and 
+bolted.</p>
+
+<p>The doorknob was made of bright clean.
+brass. The drip of the rain made a 
+pleasant sound.</p>
+
+-- /code
+
+
+-- h3
+
+Output
+
+-- div/
+-- class: neoexample
+
+-- p 
+
+The dirt piles were lines along the 
+road. The door was barred, locked, and 
+bolted.
+
+The doorknob was made of bright clean.
+brass. The drip of the rain made a 
+pleasant sound.
+
+-- /div
+
+
+
+
+
+
+
+-- todo
+
+[] Do basic output with multiple paragraphs
+
+[] Handle attributes
+
+
+-- categories
+-- Neopolitan 
+
+-- groups
+-- Neopolitan Sections
+
+-- metadata
+-- date: 2023-07-01 21:07:58
+-- id: 2rzk16vp
+-- site: aws
+-- type: neodocs
+-- status: draft 

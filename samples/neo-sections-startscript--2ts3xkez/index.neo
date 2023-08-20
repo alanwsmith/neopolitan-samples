@@ -1,0 +1,103 @@
+-- title
+
+Neopolitan -- script/ Section
+
+-- section/
+-- class: neoexamplewrapper
+
+-- h3
+
+Source
+
+-- code/
+
+-- script/
+
+console.log("delta tango")
+
+-- /script
+
+-- /code
+
+
+-- h3
+
+Example HTML
+
+-- code/
+
+<script>
+  console.log("delta tango")
+</script>
+
+-- /code
+
+-- /section
+
+-- h2
+
+Showing The Code 
+
+Adding a `-- show`neo` attribute outputs
+a visible code block with the script in it
+on the page in addition to adding it
+to the head of the document. 
+
+The functionality is designed to ensure that
+code samples are accurate because
+they are being used directly. 
+
+
+-- section/
+-- class: neoexamplewrapper
+
+-- h3
+
+Source
+
+-- code/
+
+-- script/
+-- show
+
+console.log("sierra hotel")
+
+-- /script
+
+-- /code
+
+-- h3
+
+Live Example
+
+This is the output from the snippet
+that set the pre tag border style for 
+this page.
+
+
+-- script/
+-- show
+
+console.log("sierra hotel")
+
+-- /script
+
+-- /section
+
+
+
+-- categories
+-- Neopolitan 
+
+-- groups
+-- Neopolitan Sections
+
+
+-- metadata
+-- date: 2023-08-02 20:34:59
+-- id: 2ts3xkez
+-- site: aws
+-- type: post
+-- status: draft 
+
+

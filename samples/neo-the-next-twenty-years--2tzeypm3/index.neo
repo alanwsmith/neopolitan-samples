@@ -1,0 +1,66 @@
+-- title
+
+The Next Twenty Years
+
+-- p 
+
+My site is twenty years old. 
+
+Realizing that got me thinking 
+about the next twenty. That's where Neopolitan started. 
+
+I've done a dozen content migrations. I never want to do another 
+one. I also want to harness the power of
+HTML without having to hardcode it. So, I'm building a thing. 
+It's proving useful to me. If you'd like to play with it, 
+I hope you find it useful as well.
+
+~a
+
+-- notes
+-- title: Notes
+
+- I'm building a prototype static site generator
+for neopolitan. It's what I'm using to build
+this site. It will eventually be generic, but right
+now there's a lot of hard coding. The source code
+is here if you'd like to dive into it:
+<<link|Neopoligin Source Code|https://github.com/alanwsmith/neopoligin>>
+
+- I'm including just about all the standard HTML 
+elements as sections or inline tags. You can see the
+lists here:
+
+<<link|Neopolitan Sections|/pages/neo-sections--2sajhpyf/index.html>>
+
+<<link|Neopolitan Inline Tags|/pages/neo-inline-tags--2sarjzu3/index.html>>
+
+- My primary goal for Neopolitan is to produce the
+HTML for my site. However, I'm not defining a
+specific output. I'm using an AST style
+reference for the spec and using templates 
+downstream to produce the HTML. 
+
+The files for spec are current located here:
+
+<<link|Neopolitan Spec Files|https://github.com/alanwsmith/neopoligin/tree/main/spec>>
+
+
+
+-- p
+-- class: next_links
+
+Previously: <<link|Inline Scripts|/pages/neo-inline-scripts--2ttuzftz/index.html>>
+
+
+-- categories
+-- Neopolitan 
+
+-- metadata
+-- date: 2023-08-14 17:59:43
+-- id: 2tzeypm3
+-- site: aws
+-- type: neodocs 
+-- status: published
+
+

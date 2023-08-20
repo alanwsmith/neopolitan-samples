@@ -1,0 +1,76 @@
+-- title
+
+Neopolitan Sections: aside
+
+
+The aside section corresponds to the 
+`aside`html` HTML tag. 
+
+-- section/
+-- class: neoexamplewrapper 
+
+-- h2
+
+Basic Example
+
+-- aside
+-- neoexample
+
+Cut the pie into large parts
+
+-- /section
+
+
+
+-- section/
+-- class: neoexamplewrapper 
+
+-- h2 
+
+With Attributes
+
+-- aside
+-- neoexample
+-- class: red_underline 
+
+Hoist it up and take it away
+
+
+-- /section
+
+
+-- section/
+-- class: neoexamplewrapper 
+
+
+-- h2
+
+With Title
+
+
+-- aside
+-- neoexample
+-- title: Alfa Bravo Charlie
+
+Hold the hammer near the end
+
+Keep the hatch tight and the watch constant
+
+
+-- /section
+
+
+-- categories
+-- Neopolitan
+
+-- groups
+-- Neopolitan Sections
+
+-- metadata
+-- date: 2023-07-08 13:32:15
+-- id: 2sicsw5n
+-- site: aws 
+-- type: neodocs 
+-- status: published
+
+

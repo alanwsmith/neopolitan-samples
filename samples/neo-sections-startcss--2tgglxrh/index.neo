@@ -1,0 +1,127 @@
+-- title
+
+Neopolitan Sections: startcss 
+
+The `-- css/`neo` section provides
+a way to add CSS to a page directly 
+from the content. The tag starts 
+a block that includes all the content
+until an `-- /css`neo` tag.
+The contents are added to the 
+`head`` of the document inside
+`style`` tags. 
+
+-- section/
+-- class: neoexamplewrapper
+
+-- h3
+
+Source
+
+-- code/
+
+-- css/
+
+div {
+  outline: 1px solid blue;
+}
+
+-- /css
+
+-- /code
+
+
+-- h3
+
+Example HTML
+
+-- code/
+
+<style>
+  div {
+    outline: 1px solid blue;
+  }
+</style>
+
+-- /code
+
+-- /section
+
+-- h2
+
+Showing The Code 
+
+Adding a `-- show`neo` attribute outputs
+a visible code block with the css in it
+on the page in addition to adding it
+to the head of the document. 
+
+The functionality is designed to ensure that
+code samples are accurate because
+they are being used directly. 
+
+
+-- section/
+-- class: neoexamplewrapper
+
+-- h3
+
+Source
+
+-- code/
+
+-- css/
+-- show
+
+pre {
+  border: 1px solid blue;
+}
+
+-- /css
+
+-- /code
+
+-- h3
+
+Live Example
+
+This is the output from the snippet
+that set the pre tag border style for 
+this page.
+
+-- css/
+-- show
+
+pre {
+  border: 1px solid blue;
+}
+
+
+-- /css
+
+
+-- /section
+
+-- todo
+
+[x] Show basic example
+
+[x] Demonstrate `-- show`neo` attribute
+
+
+
+
+-- categories
+-- Neopolitan 
+
+-- groups
+-- Neopolitan Sections
+
+-- metadata
+-- date: 2023-08-07 21:17:41
+-- id: 2tgglxrh
+-- site: aws
+-- type: post
+-- status: published 
+
+

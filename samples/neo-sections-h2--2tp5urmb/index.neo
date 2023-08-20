@@ -1,0 +1,59 @@
+-- title
+
+Neopolitan -- h2 Section
+
+-- h2
+
+Basic Example
+
+-- h3
+
+Neopolitan
+
+-- code/
+
+-- h2
+
+Alfa Bravo Charlie
+
+-- /code
+
+-- h3
+
+HTML
+
+-- code/
+
+<hgroup>
+  <h2>Alfa Bravo Charlie</h2>
+</hgroup>
+
+-- /code
+
+-- h3
+
+Output
+
+-- div/
+
+-- h3
+
+Alfa Bravo Charlie
+
+-- /div
+
+
+-- categories
+-- Neopolitan 
+
+-- groups
+-- Neopolitan Sections
+
+-- metadata
+-- date: 2023-08-01 19:21:36
+-- id: 2tp5urmb
+-- site: aws
+-- type: neodocs 
+-- status: draft 
+
+

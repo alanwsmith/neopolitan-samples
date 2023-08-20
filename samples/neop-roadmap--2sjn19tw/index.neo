@@ -1,0 +1,32 @@
+-- title
+
+Neoprep Roadmap
+
+Thing to do for the process that moves files
+from my grimoire into the content directory
+to build the site. 
+
+-- todo
+
+[] convert IDs to all lower case
+
+[] convert IDs to 8 chracters
+
+[] skip pages without ids? or push them
+without an id segment in the dir? probably
+the latter. 
+
+
+
+-- categories
+-- Neopolitan 
+-- Neopolengine 
+
+-- metadata
+-- date: 2023-07-08 19:55:05
+-- id: 2sjn19tw
+-- site: aws
+-- type: post
+-- status: draft 
+
+

@@ -1,0 +1,204 @@
+-- title
+
+My Dotfiles: zshrc 
+
+Here's what my current .zshrc file looks like:
+
+-- code/
+-- export: /Users/alan/.zshrc
+
+#########################################################
+# Turn on prompt expansion
+
+setopt PROMPT_SUBST
+
+#########################################################
+# Load other aliases and functions 
+
+if [ -d "/Users/alan/.zsh_aws_tools" ]; then 
+  for file in /Users/alan/.zsh_aws_tools/*.zsh; do 
+    source "$file"
+  done
+fi 
+
+#########################################################
+# Set up so you don't have to type `cd` to get 
+# into a directory 
+
+setopt autocd 
+
+#########################################################
+# Set colors for ls
+
+export CLICOLOR=1
+export LS_COLORS='di=1:fi=34:ln=31:pi=5:so=5:bd=5:cd=5:or=31'
+
+#########################################################
+# Don't keep commands that start with a space to 
+# the history log
+
+setopt HIST_IGNORE_SPACE
+
+#########################################################
+# Define Prompt Colors
+
+BG_ON='%K{233}'
+BG_OFF='%k'
+FG_ON='%F{3}'
+FG_OFF='%f'
+FG_CARET='%F{242}'
+FG_DOT='%F{239}'
+FG_OK='%F{28}'
+FG_ER='%F{52}'
+
+NEWLINE=$'\n'
+
+#########################################################
+# Make a display to show if the last command
+# was successful or not
+
+function prompt_previous_exit_code() {
+    if [[ $? -eq 0 ]]; then
+        echo " ${FG_DOT}· ${FG_OK}OK${FG_ON}"
+    else
+        echo " ${FG_DOT}· ${FG_ER}ERROR: $?${FG_ON}"
+    fi 
+}
+
+#########################################################
+# Show current git branch if there is one
+
+function prompt_git_branch() {
+    BRANCH_NAME=$(git branch --show-current 2> /dev/null)
+    if [ $? -eq 0 ]; then
+        echo -n " ${FG_DOT}· [$BRANCH_NAME]${FG_ON}"
+    else
+        echo -n "${FG_DOT}${FG_ON}"
+    fi 
+}
+
+#########################################################
+# Show if you're in a python venv
+
+function prompt_python_venv() {
+    if [ -n "$VIRTUAL_ENV" ]; then 
+        echo -n " ${FG_DOT}· VENV${FG_ON}"
+    else
+        echo -n "${FG_DOT}${FG_ON}"
+    fi
+}
+
+#########################################################
+# Set  The Prompt
+
+function precmd() {
+    PROMPT_EXIT_STRING=$(prompt_previous_exit_code)
+    PROMPT_DATE_STRING=$(date "+%-I:%M%p" | tr '[:upper:]' '[:lower:]')
+    L1="${BG_ON}${FG_CARET}> ${FG_ON}dojo $(dirs)"
+    L1="${L1}${PROMPT_EXIT_STRING}"
+    L1="${L1}$(prompt_python_venv)"
+    L1="${L1}$(prompt_git_branch)"
+    CHARCOUNT=${#L1}
+    COLCOUNT=$(($(tput cols) * 1))
+    for i in $( seq 1 $(( COLCOUNT - CHARCOUNT + 52)) ); do L1="$L1 "; done
+    L1="${L1} ${FG_DOT}${PROMPT_DATE_STRING}${FG_ON} "
+    PS1="${L1}${BG_OFF}${NEWLINE}${BG_ON}${FG_CARET}>${BG_OFF}${FG_OFF} "
+}
+
+
+#########################################################
+# Set up/down arrows based on existing text
+
+bindkey '^[[A' up-line-or-search
+bindkey '^[[B' down-line-or-search
+
+#########################################################
+# Use vim bindings
+
+bindkey -v
+
+#########################################################
+# Exports
+
+export PATH="/Applications/Blender.app/Contents/MacOS:$PATH"
+export PATH="/Users/alan/go/bin:$PATH"
+export NODE_PATH="$(npm root -g):$NODE_PATH"
+export EDITOR=nvim
+source $HOMEBREW_PREFIX/opt/chruby/share/chruby/chruby.sh 
+source $HOMEBREW_PREFIX/opt/chruby/share/chruby/auto.sh 
+chruby ruby-3.1.2
+
+# The following lines were added by compinstall
+zstyle ':completion:*' completer _expand _complete _ignored
+zstyle ':completion:*' format 'alfa %d'
+zstyle :compinstall filename '/Users/alan/.zshrc'
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+-- /code 
+
+
+-- notes
+
+- Some lines return just the color codes with
+no content. That's to keep the padding lined
+up with the background highlight mechanism
+
+- I'm keeping my main customizations in external 
+files load in via the `.zsh_aws_tools`` directory. 
+They're a lot easier for me to deal with as 
+individual files
+
+- I'm set up to avoid saving things into the history
+file that start with a space, but I still don't 
+type passwords into the command prompt. It's good
+practice in general but becomes pretty important
+when you stream to avoid accidentally flashing
+credentials. I call things directly from my password 
+manager instead
+
+- I tried using `setopt CDABLE_VARS`bash` but didn't
+like it. When I would tab complete for a file it 
+would offer different directories instead of just
+going into the single file in the directory I was
+actually in
+
+- I had `export TERM=screen-256color`` based of some
+old post but have removed it. Things seem to
+work fine without it in iTerm2 and tmux as far
+as I can tell
+
+- I'm using `%K{16}`` for the background color
+instead of `%K{0}`` because the later is getting
+overwritten by the color them in iTerm2
+
+- I used to have some git stuff in here, but it
+slows down the prompt when I'm in larger 
+directories
+
+- The `FG_OK`` and `FG_ER`` value both need
+to be the same number of digits. (i.e. either
+they are both 2 digits or they are both 3
+digits). Otherwise, the padding to space out
+the background line misses one or the other
+
+-- ref
+-- title: ZSH Prompt Expansion
+-- url: https://zsh.sourceforge.io/Doc/Release/Expansion.html#Expansion
+
+-- categories
+-- Command Line
+-- dotfiles
+-- zsh
+
+-- groups
+-- zsh
+
+-- metadata
+-- date: 2023-07-24 01:41:02
+-- id: 2t0pwnnd
+-- site: aws
+-- type: post
+-- status: published 
+

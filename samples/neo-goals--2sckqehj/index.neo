@@ -1,0 +1,80 @@
+-- title
+
+Neopolitan Goals
+
+
+-- warning
+
+This pages is just scratch notes right now
+to put my thoughts together for a first draft. 
+
+
+-- css
+
+
+
+
+
+
+
+
+.warning {
+  border: 1px solid var(--color-3);
+  color: var(--color-4);
+}
+
+
+
+-- h3
+
+The Foundation 
+
+The fundamental goal of Neopolitan is to reduce
+the friciton between having an idea and pushing
+it live. The design pushing and pulls on the 
+other formats to setup a new balance point between
+them and html. A new compormise in the landscape.
+
+
+-- h3
+
+The Parts
+
+The project ended up being two parts: The format, 
+and a static site generator that uses it. This 
+page introduces the format. The generator is 
+called Neopolengine. You can 
+<<find details about it here|link|/neopolengine/>>.
+
+
+-- list
+
+Things to add
+
+- The next 20 years
+
+- Working with other libraries without
+fighting them
+
+- All of HTML
+
+- But not HTML itself
+
+- Wrapping
+
+- Attributes for sections and content (big on hereL
+
+- Spec is an AST, not HTML
+
+
+-- categories
+-- Neopolitan 
+
+-- metadata
+-- date: 2023-07-15 13:00:13
+-- id: 2sckqehj
+-- site: aws
+-- type: neodocs 
+-- status: draft 
+
+

@@ -1,0 +1,108 @@
+-- title
+
+Neopolitan List Section
+
+This is for making unordered lists
+
+
+-- h2
+
+Example
+
+-- code/
+
+-- list
+
+- Keep the hatch tight and the 
+watch constant. Let it burn, it 
+gives us warmth and comfort.
+
+Lift the square stone over the fence. Loop 
+the braid to the left and then over.
+
+- Mark the spot with a sign painted 
+red. Open the crate but don't break 
+the glass.
+
+Open your book to the first page. Pack 
+the kits and don’t forget the salt. Paint 
+the sockets in the wall dull green Echo
+
+
+-- /code
+
+
+-- h2
+
+Translated
+
+
+-- results/
+
+
+<ul>
+  <li>
+    <p>
+      Keep the hatch tight and the 
+      watch constant. Let it burn, it 
+      gives us warmth and comfort.
+    </p>
+    <p>
+      Lift the square stone over the 
+      fence. Loop the braid to the left 
+      and then over.
+    </p>
+  </li>
+  <li>
+    <p>
+      Mark the spot with a sign painted 
+      red. Open the crate but don't break 
+      the glass.
+    </p>
+    <p>
+      Open your book to the first page. Pack 
+      the kits and don’t forget the salt. Paint 
+      the sockets in the wall dull green Echo
+    </p>
+  </li>
+</ul>
+
+-- /results
+
+-- h2
+
+Output
+
+
+-- list
+
+- Keep the hatch tight and the 
+watch constant. Let it burn, it 
+gives us warmth and comfort.
+
+Lift the square stone over the fence. Loop 
+the braid to the left and then over.
+
+- Mark the spot with a sign painted 
+red. Open the crate but don't break 
+the glass.
+
+Open your book to the first page. Pack 
+the kits and don’t forget the salt. Paint 
+the sockets in the wall dull green Echo
+
+
+
+-- categories
+-- Neopolitan 
+
+-- groups
+-- Neopolitan Sections
+
+-- metadata
+-- date: 2023-07-23 15:33:28
+-- id: 2sze3ncf
+-- site: aws
+-- type: neodocs
+-- status: published 
+

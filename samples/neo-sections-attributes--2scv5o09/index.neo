@@ -1,0 +1,73 @@
+-- title
+
+Neopolitan Page Attributes
+
+-- notes
+
+- Only specific attributes that are cleanlisted
+in the attributes_v2.html file will show up. This
+is to prevent things like title from showing up
+in the attributes when they are meant for the
+visible output.
+
+
+-- h2
+
+Required
+
+For my implementation of Neopoitan the following 
+attributes are required (with their current implementation
+status)
+
+-- todo 
+
+[x] date - The date in ISO 8601 format with the space in the middle
+
+[] id - Used for maintaing redirects if the URLs changed 
+because the filename changes
+
+[] status - NOTE: right now, every file in the content directory
+is published. It's the reponsibility of the process that moves files
+in to make sure everything is setup properly. Eventually a backup
+filter will be added to ensure that only files marked scratch, draft, 
+or published go. 
+
+[] type - the core type of the page (e.g. post, neodoc). If no
+template if defined then this is used for the template too. 
+
+
+-- h2 
+
+Optional
+
+-- todo
+
+[] site - for sending documents to different websites
+or output locations
+
+[] template - for setting specific templates for the file
+if the default one for the `type`` needs to be overwritten
+
+
+-- h2
+
+Skipping
+
+-- list 
+
+- slug - I was thinking aobut his for the URL, but for 
+now the file filename is working just fine
+
+
+
+-- categories
+-- Neopolitan 
+
+-- metadata
+-- date: 2023-07-06 13:06:32
+-- id: 2scv5o09
+-- site: aws
+-- type: neodocs
+-- status: draft 
+
+

@@ -1,0 +1,526 @@
+-- title
+
+Neopoligin Roadmap
+
+-- h2
+
+For Launch
+
+This is the list of additional things to put 
+in place for launch
+
+-- todo 
+
+[x] Auto generate initial list of links for pages
+
+[x] Make IDs 8 characters
+
+[] Setup redirects
+
+
+
+-- h2 
+
+Post-Launch
+
+-- todo
+
+[] Finish putting in all sections for neopoligin
+
+[] Setup "-- show" attributes for neopolitan 
+elements (html, css, js)
+
+[] Fix issue where you can't have lines on top
+of each other in JS/CSS code
+
+[] Setup different page types in neopolitan
+
+[] Add draft heading to template in neopolitan
+
+[] Make checklists work
+
+[] Get todo lists working
+
+[] Syntax highlighting
+
+[] Figure out how to handle sections that are 
+unknown. Probably just dump the contents
+as paragraphs? Or, make them invisible?
+
+[] setup so if there isn't text behind
+a tag, it doesn't eat the next one
+
+[] Add file output details to binder
+
+[] Build RSS sites via config. (e.g. everything
+or things of categories, or things with custom
+configs of types, categetories, dates, etc...)
+
+[] Handle tags that span multiple lines
+
+[] Make full allow list for nonce- words 
+
+[] Add a quotes section
+
+[] Setup so code sections and results 
+sections have a central wrapper so 
+they can be displayed together
+
+[] Add the ability to add a literl `\n`` in text
+that turns into a `<br />``
+
+[] Figure out what to do for OpenGraph Images.
+Maybe setup so you can just drop it in the 
+content directory and it'll line up properly.
+It there's not one there it can default back
+to a central one and pass params for things
+like cloudinary. Maybe setup in a template 
+to start for the intial thing
+
+[] Add startnote/endnote
+
+[] Prevent writing out a directory if
+you accidentaly put one in instead of a
+full file path. Otherwise you won't 
+be able to overwrite it to fix it without
+manually deleting the errant folder
+
+[] Make sure only alphanumeric characters 
+show up in the urls
+
+[] Flip tag order so tag name is first
+
+
+[] Setup linking by page id
+
+[] Add `show`` attributes to css and script
+sections that output the text in code blocks 
+
+[] Add a `-- groups`` category that
+let you automatically add links to
+all the files in a group on the 
+corresponding pages with the current 
+page not linking to itself
+
+[] Add the ability to have a link title that shows up
+on incomding links that's different for the title
+displayed on the page. This is so you can have templates
+that cover part of the name. For exampmle, in `stills``
+the goal is just to have the name of the source but incoming
+links should say something like "Stills from the movie hackers"
+in the list of posts. 
+
+[] Setup to use code fences in list items
+
+
+[] Include raw text in page data for things like
+showing raw code samples.
+
+[] Setup the config section so it can be json
+or yaml or kdl or whatever
+
+[] Move the attributes parsing from textarea to 
+be global
+
+[] Clear file hashes of files that are no longer
+in the mix to avoid a cases where you changes
+something back and it doesn't get picked up
+
+[] Add a slug field? or should that just be the 
+file path? probably that
+
+[] Setup so there things start with a 
+paragraph section if there's no section to start?
+Maybe not? Thinkging about test cases, but 
+the parsers would need to know what section
+they are in in order to parse stuff. Like, 
+you can't have content that's ouside of a section
+because, for example, you wouldn't know if it
+was in a code section or a start end code section
+
+[] Add `-- description`` maybe for page
+metadata? Maybe that should just be the blurb?
+Or description would be plaintext?
+
+[] Cache content parts for each file and 
+use the caches if the file hasn't changed
+
+[x] Setup `-- export`` output files. This is 
+more the mover than the engine, but it's
+something to document in terms of the 
+overall functionalty
+
+[] Fall back to a default template if
+the requested one isn't there. 
+
+[] Make `-- start/endscript`` so that
+dashing inside the script don't cause
+neo to freak out and think it's
+another section
+
+[] Add startnote/endnote
+
+
+[] Create an attribute for code blocks
+to `cd`` into a specific directory 
+before running them
+
+[] Make a `-- highlights`` section
+
+[x] Turn on HTML escaping for code blocks
+
+
+[] Setup tabs sections with tabs/endtabs
+and individual tab section in between (or
+something like that)
+
+[x] Get images working
+
+[x] Have a single images directory that can
+have multiple sub directories. Match by 
+filename first for any call. Also provide
+a way to match by the full subpath for times
+when their might otherwise be naming conflicts. 
+When rending, warn if there's a name collision
+for images
+
+[] Panic on a page if there is more than
+one id
+
+[] Panic on a page if there is more than
+one title. 
+
+[] Add tabsets where the tabs house blocks
+of content. There should be a 'title' attribute
+that sets the name of the tab. maybe there's
+a starttabs/endtabs? that seems like it would
+make sense
+
+[] Setup a cd attribute for code snippets
+to run them in a specific directory
+
+[x] Don't requrie file extensions for images 
+(which makes them easier to copy on operating
+systems where clicking to rename doesn't select it)
+
+[x] Clean up image URLs
+
+[] Download external images
+
+[x] Convert image calls from markdown/org-mode
+to neopolitan
+
+
+
+
+[] Insure that the first title wins if there's
+more than one on the page
+
+[] See about creating table of contents 
+on pages from heading. Might be able to 
+do it with basic sending. If not, figure
+out what needs to be sent
+
+[] Make `-- startWhatever/endWhatever`` tags
+to allow nesting of anything
+
+[] setup for multiple dashes for section 
+starts for open/close tags
+
+[] Move output of things like collections 
+of lists to the content files maybe? not 
+sure if that would make sense or not. 
+Probably only if they would need
+to go in between content, but probably 
+for the home page it would make sense
+
+[] Setup error messages (e.g. if you have
+an opening &lt;&lt; without cloging it
+
+[] Delete content when it's removed 
+
+
+[] Look at this to see if it might 
+help with auto reloading: https://github.com/mitsuhiko/minijinja/tree/main/minijinja-autoreload
+
+[] Test all variants of attributes that
+have explicit options
+
+[] Look at `custom_syntax` in minijinja for
+custom separators for a different look
+
+-- pre
+
+-- opendiv 
+-- class: asdf
+
+--- opendiv
+--- class: were
+
+This is content
+
+--- closediv
+
+--- opendiv
+--- class: some other class
+
+This is content
+
+--- closediv
+-- closediv 
+
+
+-- todo
+
+
+[] Setup so you can define what stylesheets
+get used by a file by an array of names (
+or default back to whatever is in the template
+if there isn't anything set) - should
+also be and additive version where you just
+append to what's on the template?
+
+[] Assemble the style sheets into a single one?
+
+[x] Drop styles inline into the head of the 
+doc?
+
+
+
+
+[x] Create secondary tool (prepneo) to migrate 
+content into reference structure
+
+[x] Move all files. Not just neo files
+
+[x] Remove `.`` and `'`` from url slugs. (and check
+for anything else that's not a letter or
+number)
+
+
+-- h2
+
+Next Steps
+ 
+These are under strong consideration for
+the next steps
+
+
+-- todo
+
+
+[] Add a `caption`` attribute to images. 
+
+[] Setup an `alt`` section (or something like
+that, that lets you write alt tags for inline
+images and then reference it so it's easier 
+to write. 
+
+[] Figure out how to do both captions and
+alt text for images. Probably use the 
+section text area for alt text then 
+use an attribute for the caption. The idea
+is they won't need formatting and will 
+be shorter
+
+[] Make global reference with IDs so you don't
+have to repeat them
+
+[] Allow extra dashing on section start lines
+for better visualization of nesting
+
+[] Setup `-|class: alfa|`` style markers for
+list items to apply styles to the `li``
+
+[] Set up prepneo to only update files
+that change
+
+
+[] Add the `link|id:xxxxx`` so links link up
+automatically
+
+[] Add syntax highlighting with 
+<<syntect|link|https://github.com/trishume/syntect>>
+
+[] Setup to ignore lines with nothing but dashes
+in them so they can be used in the text files for
+visual separation without having any effect 
+on the output
+
+[] Setup file link lists so they can be done with multiple
+categories, types, and, dates in both and
+additive and subtractive manner. Probably 
+a little JSON object would work. The subtractive
+stuff comes last to remove stuff as the last 
+step.
+
+
+[] Figure out what tables are going to look
+like. Maybe there's two versions. One where
+you don't need attributes per call and 
+one that provides that?
+
+[] Handle a third "other" state in todo lists (
+e.g. `[phase2]``)
+
+[] Add a config section that let you pass arbitrary
+key/value pairs to the template rendering engine
+
+[] Create category link lists
+
+[] Create type link lists
+
+[] Create global references so you can 
+add multiple footnoes from a single source
+via a reference
+
+[] Auto-generate category pages
+
+[] Compress/Minify/TreeShake CSS as an 
+option (see: https://cssnano.co/)
+
+[] Review how OG images are handled
+
+[] Send data to templates for OG tags
+
+[] Switch to an allow list for url names
+
+-- h2
+
+Follow Up
+
+These are thing that'll probly happen
+
+-- todo 
+
+[] Setup process to configure redirects from 
+one id to another one
+
+[] Setup to automatically jump to whatever page
+is being update via a live reload
+
+
+
+[] Build RSS feeds with weekly, etc...
+summaries 
+
+[] Pull alt-text from image metadata
+
+[] Consider using this for moving list items
+down/over a level `-+``. TODO would be
+go figure out how to do that with code
+blocks which shouldn't move over a level
+
+[] Maybe inside lists there's a special set
+of sections for `--+ startcode`` and 
+`--+ startdiv``. Those two might be enough
+to get you what you need
+
+[] For images, put alt text as an attribute
+and caption as the body undreneath because
+the caption can have other HTML in it
+
+[] Switch to loading attributes in the 
+body on parsting too. It doesn't have to 
+be output. it just makes it avaialbe 
+
+[] Standardize the date format
+
+[] Set up a way to show preview files without 
+marking them as published or putting them on 
+the site. Maybe that's making a 'preview'
+status becuase it would be up to a previous 
+process to move them into a place where you could
+see them at all. 
+
+[] Auto commit the repo and deploy on changes via
+a config option to turn that feature on
+
+[] Setup a directory specifically for binaries to 
+use (e.g. beyond just the system stuff). Set that up
+as the first thing in the path when trying to run 
+stuff. Goal would be to make something like "gallery"
+that would load in all the images from a directory of
+the same name in the same folder and then create json
+for them that goes to the widget templates. `-> ext
+
+[] Setup a server that can be used for localhost
+testing with live updates so you don't have
+to use browsersync. 
+
+[] Add ability to reference the code of one
+section inside a code block without having
+to duplicate the code. 
+
+[] Auto generate redirects files that watch for
+url changes for ids
+
+[] Create a report page showing stats on 
+the build (off by default unless you turn
+it on in the config)
+
+[] Prettier style formatting
+
+[] Add alt text to canvas
+
+-- h2
+
+Maybe Never
+
+This is a collection of brainstorming ideas.
+Most of them will probably never see the 
+light of day.
+
+-- todo
+
+[] Make a prettier style definition for spacing
+
+[] Setup a config file to define what attributes
+can be used. Not sure if this is worth it or
+not, but it would allow for error checking. 
+
+[] An image browser that give you the filenames
+to copy paste into posts. Could have search too
+
+[] Setup a bunch of things like Alpine, D3, P5,
+etc... so they can be turned on for a page with
+a config flag
+
+[] Write up how to use ngrok and the other one
+to serve a site 
+
+[] A way to add blocks inside inline tags?
+Something like `-- code/`` that would let you 
+then put the content of another block in it.
+
+[] Generate lists of all references inside
+each category and create a page with 
+just those references. Primary idea is
+for bookmarks, but would be useful 
+across the board. Could also do one 
+for every ref on the site. 
+
+[] If you run the command in an empty directory
+have it drop in all the default stuff
+
+[] Redirect removed pages to the home page?
+
+[] Generate 404 page with random or highlighted
+links on every generation
+
+[] Tweak things to make it move faster 
+
+[] Consider pulling last updated values from 
+a git repo?
+
+
+-- categories
+-- Neopolitan 
+-- Neopolengine
+
+-- metadata
+-- date: 2023-07-08 19:50:16
+-- id: 2sjmqrqr
+-- site: aws
+-- type: post
+-- status: published 

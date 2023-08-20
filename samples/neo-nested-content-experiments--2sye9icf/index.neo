@@ -1,0 +1,303 @@
+-- title
+
+Neopolitan Nested Content Experiments
+
+This page is for me to play around with 
+formatting for nested content. 
+
+-- html
+
+<div class="splitter">
+  <div class="exampleWrapper">
+    <div id="buttons_a"></div>
+    <div id="title_a"></div>
+    <div><pre><code id="content_a"></code></pre></div>
+  </div>
+  <div class="exampleWrapper">
+    <div id="buttons_b"></div>
+    <div id="title_b"></div>
+    <div><pre><code id="content_b"></code></pre></div>
+  <div>
+</div>
+
+
+-- css
+
+.splitter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+-- script
+
+const examples = [
+{
+	title: `1`, 
+	content: `
+ -- opendiv
+ -- class: wrapper
+
+ -- opendiv
+
+ Alfa Bravo Charlie
+
+ -- closediv
+
+ -- opendiv
+
+ Delta Echo Foxtrot
+
+ -- closediv
+
+ -- closediv
+
+  ` 
+}, 
+{
+	title: `2`, 
+	content: `
+ -- opendiv
+ -- class: wrapper
+
+ --- opendiv
+
+ Alfa Bravo Charlie
+
+ --- closediv
+
+ --- opendiv
+
+ Delta Echo Foxtrot
+
+ --- closediv
+
+ -- closediv
+
+  ` 
+}, 
+{
+	title: `3`, 
+	content: `
+ -- opendiv
+ -- class: wrapper
+
+ --- opendiv
+
+ Alfa Bravo Charlie
+
+ --- closediv
+
+ --- opendiv
+
+ Delta Echo Foxtrot
+
+ --- closediv
+ -- closediv
+
+
+  ` 
+}, 
+{
+	title: `4`, 
+	content: `
+ -- opendiv
+ -- class: wrapper
+
+ --- opendiv
+
+ Alfa Bravo Charlie
+
+ --- closediv
+ --- opendiv
+
+ Delta Echo Foxtrot
+
+ --- closediv
+ -- closediv
+
+
+
+  ` 
+}, 
+{
+	title: `5`, 
+	content: `
+ -- opendiv
+ -- class: wrapper
+
+ --+ opendiv
+
+ Alfa Bravo Charlie
+
+ --+ closediv
+ --+ opendiv
+
+ Delta Echo Foxtrot
+
+ --+ closediv
+ -- closediv
+
+
+
+  ` 
+}, 
+{
+	title: `6`, 
+	content: `
+ -- opendiv
+ -- class: wrapper
+
+ +-- opendiv
+
+ Alfa Bravo Charlie
+
+ +-- closediv
+ +-- opendiv
+
+ Delta Echo Foxtrot
+
+ +-- closediv
+ -- closediv
+
+
+
+  ` 
+}, 
+{
+	title: `7`, 
+	content: `
+ -- opendiv
+ -- class: wrapper
+
+ |-- opendiv
+
+ Alfa Bravo Charlie
+
+ |-- closediv
+ |-- opendiv
+
+ Delta Echo Foxtrot
+
+ |-- closediv
+ -- closediv
+
+
+
+  ` 
+}, 
+{
+	title: `8`, 
+	content: `
+ -- opendiv
+ -- class: wrapper
+
+ --| opendiv
+
+ Alfa Bravo Charlie
+
+ --| closediv
+ --| opendiv
+
+ Delta Echo Foxtrot
+
+ --| closediv
+ -- closediv
+
+
+
+  ` 
+}, 
+{
+	title: `9`, 
+	content: `
+ -- opendiv
+ -- class: wrapper
+
+ ---| opendiv
+
+ Alfa Bravo Charlie
+
+ ---| closediv
+ ---| opendiv
+
+ Delta Echo Foxtrot
+
+ ---| closediv
+ --| closediv
+ -- closediv
+
+  ` 
+}, 
+]
+
+
+const make_buttons = () => {
+  var a_buttons = ""
+  var b_buttons = ""
+  for (var i=0; i<examples.length; i++) {
+    a_buttons += `<button id="a_${i}">${examples[i].title}</button>`
+    b_buttons += `<button id="b_${i}">${examples[i].title}</button>`
+  }
+  buttons_a.innerHTML = a_buttons
+  buttons_b.innerHTML = b_buttons
+  setDisplay("a", 0)
+  setDisplay("b", 1)
+}
+
+
+const checkit = (event) => {
+  if (event.target.id) {
+    const parts = event.target.id.split("_")
+    setDisplay(parts[0], parts[1])
+  }
+}
+
+
+const setDisplay = (letter, num) => {
+  const line_count = 20;
+  const source = examples[num].content.trim().split("\n")
+  const output = []
+  for (let i=0; i<line_count; i++) {
+    if (source[i]) {
+      output.push(source[i])
+    } else {
+      output.push("")
+    }
+  }
+  if (letter === "a") {
+    title_a.innerHTML = `Version: ${parseInt(num, 10) + 1}`
+    content_a.innerHTML = output.join("\n")
+  }
+  if (letter === "b") {
+    title_b.innerHTML = `Version: ${parseInt(num, 10) + 1}`
+    content_b.innerHTML = output.join("\n")
+  }
+}
+
+document.addEventListener("DOMContentLoaded", make_buttons)
+document.addEventListener("click", checkit)
+
+
+-- css 
+
+pre {
+  margin: 1.2rem;
+  padding: 1.4rem;
+  border: 1px solid #555;
+  border-radius: 10px;
+  min-height: 14rem;
+}
+
+
+-- categories
+-- Neopolitan 
+
+-- metadata
+-- date: 2023-07-14 02:09:19
+-- id: 2sye9icf
+-- site: aws
+-- type: post
+-- status: draft 

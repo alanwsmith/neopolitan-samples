@@ -1,0 +1,138 @@
+-- title
+
+Neopolitan Tag Attributes
+
+This is the list of attributes that can be applied to 
+tags. The global ones work on any tag. Non-globals
+are specific to specific sub-sets of tags. See
+the MDN docs listed at the bottom of the page
+for reference. 
+
+
+I'm only adding these as I need them so most haven't
+been done. 
+
+
+-- todo
+
+[] accept
+
+[] accesskey
+
+[] autocapitalize (global)
+
+[] autocomplete
+
+[] autofocus (global)
+
+[] capture
+
+[x] class (global)
+
+[] contenteditable (global)
+
+[] crossorigin
+
+[NEXT] data-* (global)
+
+[] dir (global)
+
+[] disabled
+
+[] draggable (global)
+
+[] elementtiming
+
+[] enterkeyhint (global)
+
+[] exportparts (global)
+
+[] for
+
+[NEXT] hidden (global)
+
+[x] id (global)
+
+[] inert (global)
+
+[] inputmode (global)
+
+[] is (global)
+
+[] itemid (global)
+
+[] itemprop (global)
+
+[] itemref (global)
+
+[] itemscope (global)
+
+[] itemtype (global)
+
+[] lang (global)
+
+[] max
+
+[] maxlength
+
+[] min
+
+[] minlength
+
+[] multiple
+
+[] nonce (global)
+
+[] part (global)
+
+[] pattern
+
+[] popover (global experimental)
+
+[NEXT] readonly
+
+[] rel
+
+[] required
+
+[] size
+
+[NEXT] slot (global)
+
+[] spellcheck (global)
+
+[] step
+
+[] style (global)
+
+[] tabindex (global)
+
+[] title (global)
+
+[] translate (global)
+
+[] virtualkeyboardpolicy (global experimental)
+
+
+
+-- ref
+-- title: MDN: Global Attributes
+-- url: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes
+
+-- ref
+-- title: MDN: Element Attributes
+-- url: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
+
+
+
+-- categories
+-- Neopolitan 
+
+-- metadata
+-- date: 2023-07-06 16:34:24
+-- id: 2sdkme67
+-- site: aws
+-- type: neodocs
+-- status: draft 
+
+

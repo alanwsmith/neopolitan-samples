@@ -1,0 +1,106 @@
+-- title
+
+Neopolitan Inline link Tag
+
+-- section/
+-- class: border1 flow
+
+-- h2
+
+Basic Example
+
+-- code/
+
+alfa <<link|bravo|/path.html>> charlie
+
+
+-- /code
+
+-- h3
+
+Output
+
+-- code/
+
+alfa <a href="/path.html>bravo</a> charlie
+
+-- /code
+
+
+-- h3
+
+Example
+
+-- p
+
+alfa <<link|bravo|#>> charlie
+
+
+-- /section
+
+
+-- section/
+-- class: border1 flow
+
+-- h2
+
+Multiline
+
+-- code/
+
+
+Hang tinsel from both branches. Heave 
+<<link|the line 
+|https://www.example.com/some/long/path>>
+over the port side.
+
+-- /code
+
+
+-- h3
+
+Output
+
+-- code/
+
+Hang tinsel from both branches. Heave 
+<a href="https://www.example.com/some/long/path">
+  the line
+</a> 
+over the port side.
+
+
+
+-- /code
+
+
+-- h3
+
+Example
+
+-- p
+
+
+Hang tinsel from both branches. Heave 
+<<link
+|the line 
+|#>>
+over the port side
+
+
+-- /section
+
+
+
+
+-- categories
+-- Neopolitan 
+
+-- metadata
+-- date: 2023-08-07 13:52:28
+-- id: 2tfoczeb
+-- site: aws
+-- type: post
+-- status: draft 
+
+

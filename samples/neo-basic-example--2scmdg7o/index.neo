@@ -1,0 +1,134 @@
+-- title
+
+Basic Neopolitan Example
+
+This is a sample Neopolitan document. 
+
+The contents are rendered directly below to 
+demonstrate the output. 
+
+
+
+
+-- code/
+-- neo
+
+-- h3 
+
+Sample Alfa Bravo
+
+This is what the neo files in my grimoire 
+look like. 
+
+
+-- note 
+-- class: alfa
+
+The rest of the *content** is placeholder content
+made of *harvard*class: tango* sentences. 
+
+Don't read\n
+too much\n
+into it. 
+
+
+-- list
+
+Sierra Tango List
+
+- Pile the coal high in the shed. Pluck the
+bright <<rose|span|id: rose>> without leaves
+
+- Put the chart on the mantel and tack it down
+
+
+-- css
+
+#rose{
+  color: red;
+}
+
+
+-- /code
+
+
+-- h3
+
+A Few Notes To Get You Started
+
+
+-- notes
+
+- The <<output of the example is here|link|/pages/neo-basic-format-example-output--2scqipm9/>>
+
+- Some of these notes describe things that haven't been
+implemented yet. They'll fully align as things get
+put in place
+
+- The Neopolitan specification doesn't detail 
+HTML output. It specifies an AST. The notes here about 
+HTML content are based off my Neopolengine reference
+implementation. 
+
+- The first line of the `-- title`` turns into an `h1``. 
+
+- Content after the first line in the title is treated as 
+paragraphs but wrapped in and `hgroup`` with the `h1``
+
+- The `-- note`` section is a convenience wrapper for adding
+a div with a `note`` class around processed content. 
+
+- The `-- class: alfa`` on the `-- note`` adds that class
+to the div as well
+
+- Break points for paragraphs are empty lines. Any text
+spanning multiple lines without an empty line in between
+will be collapsed into a single string
+
+- Shorthand codes for strong, em, link, and strike
+are done by surrounding content with specific separators
+as in the "content" example above (TODO: update to 
+display that text here directly) [Not yet implemented]
+
+- Attributes can be added to shorthand codes as with the
+harvard/class:tango exapmle
+
+
+- HTML `br`` tags can be added with `\n`` [Not yet
+implemented]
+
+
+- Different sections offer different internal behavior. 
+For example `-- list`` can start with an optional 
+paragraph followed by list items starting with `- ``. 
+Collectively that's turned into a div containing the
+paragraph and a `ul`` with `li`` tags for each item 
+
+
+- Some sections work more behind the scenes. For example
+the `-- css`` section provides a way to add CSS directly
+to a page from the content file. The example showing
+adding a span with an id to the word _rose__ then setting
+up a css section to change it's color.
+
+
+
+
+
+-- todo
+
+[] Link spec
+
+
+
+-- categories
+-- Neopolitan 
+
+-- metadata
+-- date: 2023-07-15 13:18:24
+-- id: 2scmdg7o
+-- site: aws
+-- type: neodocs 
+-- status: draft 
+
+

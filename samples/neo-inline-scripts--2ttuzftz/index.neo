@@ -1,0 +1,63 @@
+-- title
+
+Inline Scripts
+
+Scripts can also be added to a page
+directly from the content. The content
+is wrapped in HTML `script`` tags
+and added to the head of the document.
+
+-- section/
+-- class: border1
+
+-- code/
+
+-- p
+-- id: theTime
+
+Loading Time...
+
+-- script
+
+document.addEventListener("DOMContentLoaded", () => {
+  theTime.innerHTML = new Date()
+})
+
+
+-- /code
+
+-- h2
+
+Output
+
+-- p
+-- id: theTime
+
+Loading Time...
+
+-- script
+
+document.addEventListener("DOMContentLoaded", () => {
+  theTime.innerHTML = new Date()
+})
+
+
+-- /section
+
+-- p 
+-- class: next_links
+
+Previously: <<link|Inline CSS|/pages/neo-inline-css--2tttlzeh/index.html>> ~
+Next Up: <<link|The Next Twenty Years|/pages/neo-the-next-twenty-years--2tzeypm3/index.html>>
+
+-- categories
+-- Neopolitan 
+
+-- metadata
+-- date: 2023-08-03 12:20:55
+-- id: 2ttuzftz
+-- site: aws
+-- type: neodocs 
+-- status: published
+
+

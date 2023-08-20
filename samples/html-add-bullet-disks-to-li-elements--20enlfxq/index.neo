@@ -1,0 +1,28 @@
+-- title
+
+Add Bullet Disks to li elements
+
+-- p
+
+To add bullets to `ul -> li`, update the `ul` style:
+
+-- code/
+-- css
+
+ul {
+    list-style: disc;
+}
+
+-- /code
+
+
+-- categories
+-- CSS
+
+-- metadata
+-- date: 2020-12-25 00:00:00
+-- id: 20enlfxq
+-- status: published
+-- type: post
+-- SCRUBBED_NEO: false
+-- site: aws

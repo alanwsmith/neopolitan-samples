@@ -1,0 +1,118 @@
+-- title
+
+Neopolitan -- checklist Section
+
+
+-- todo
+
+[] add general attributes
+
+[] add title attribute
+
+[] add subtitle attribute
+
+
+-- p 
+
+This is a checklist test. The idea is that
+each time you visit/refresh the page it
+starts with everything uncheck so you 
+can run through it. 
+
+-- h2
+
+Basic Example
+
+-- section/
+-- class: neoexamplewrapper flow
+
+-- h3
+
+Source
+
+-- code/
+
+-- checklist
+
+[] Take the winding path to reach the lake
+
+Tear a thin sheet from the yellow pad
+
+[] Turn on the lantern which gives us light
+
+-- /code
+
+-- h3
+
+Example HTML
+
+-- code/
+
+<ul>
+
+<li>
+  <label>
+    <input type="checkbox">
+    <div>
+      <p>
+        Take the winding path to reach the lake
+      </p>
+      <p>
+        Tear a thin sheet from the yellow pad
+      </p>
+    </div>
+  </label>
+</li>
+
+<li>
+  <label>
+    <input type="checkbox">
+    <div>
+      <p>
+        Turn on the lantern which gives us light
+      </p>
+    </div>
+  </label>
+</li>
+
+</ul>
+
+
+-- /code
+
+-- h3
+
+Example Output
+
+
+-- checklist
+
+[] Take the winding path to reach the lake
+
+Tear a thin sheet from the yellow pad
+
+[] Turn on the lantern which gives us light
+
+
+-- /section
+
+
+
+-- ref
+-- url: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label
+
+
+-- categories
+-- Neopolitan 
+
+-- groups
+-- Neopolitan Sections
+
+-- metadata
+-- date: 2023-08-02 12:16:36
+-- id: 2tr5lyeh
+-- site: aws
+-- type: post
+-- status: draft 
+
+

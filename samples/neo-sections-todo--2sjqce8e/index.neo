@@ -1,0 +1,123 @@
+-- title
+
+Neopolitan Todo Section
+
+
+
+-- h2 
+
+Things To Do For This Page
+
+-- todo
+-- title: Stuff to make happen for the section
+
+These are the rest of the things to 
+be done for the first version to be 
+fully baked
+
+[x] Create Basic Example
+
+[] Add `-- title`` example
+
+[] Setup so arbitrary values are identified in
+the data structure. (set a boolean and then have
+the value as well)
+
+-- section/ 
+-- class: neoexamplewrapper
+
+-- h3
+
+Source
+
+-- code/
+
+-- todo
+
+[] Add salt
+
+[] Fry the egg
+
+Breathe deep
+
+[] Draw the chart 
+
+
+
+-- /code
+
+-- h3
+
+Example HTML
+
+-- code/
+
+<ul>
+  <li>
+    <input type="checkbox" disabled />
+    <div>
+      <p>Add salt</p>
+    </div>
+  </li>
+
+  <li>
+    <input type="checkbox" disabled />
+    <div>
+      <p>Fry the egg</p>
+      <p>Breathe deep</p>
+    </div>
+  </li>
+
+  <li>
+    <input type="checkbox" disabled />
+    <div>
+      <p>Draw the chart</p>
+    </div>
+  </li>
+</ul>
+
+-- /code
+
+
+-- h3
+
+Example Output
+
+
+-- todo
+
+[] Add salt
+
+[] Fry the egg
+
+Breathe deep
+
+[] Draw the chart 
+
+
+
+
+-- /section
+
+
+
+
+-- ref
+-- url: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox
+
+
+-- categories
+-- Neopolitan 
+
+-- groups
+-- Neopolitan Sections
+
+
+-- metadata
+-- date: 2023-07-08 23:58:30
+-- id: 2sjqce8e
+-- site: aws
+-- type: post
+-- status: published
+
+

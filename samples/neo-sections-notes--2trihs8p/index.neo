@@ -1,0 +1,57 @@
+-- title
+
+Neopolitan Sections: notes
+
+A list section but wrapped in a div 
+with a `notes`` class on it and
+the ability to add a title.
+
+This is a live example until the
+other ones are made
+
+-- notes
+-- title: Live Example
+
+This is the prelude to the notes
+
+- Pluck the bright rose without 
+leaves. Pour the stew from the 
+pot into the plate
+
+- Put the chart on the mantel and 
+tack it down. Raise the sail and 
+steer the ship northward. 
+
+Say it slowly but make it ring 
+clear. Screen the porch with woven 
+straw mats.
+
+- Send the stuff in a thick paper 
+bag. Set the piece here and say 
+nothing. Shut the hatch before the 
+waves push it in
+
+
+-- todo
+-- title: To Do List
+
+[] Add basic example
+
+[] Show title
+
+[] Show prelude
+
+
+-- categories
+-- Neopolitan  
+
+-- groups
+-- Neopolitan Sections
+
+
+-- metadata
+-- date: 2023-08-02 14:03:01
+-- id: 2trihs8p
+-- site: aws
+-- type: post
+-- status: draft 

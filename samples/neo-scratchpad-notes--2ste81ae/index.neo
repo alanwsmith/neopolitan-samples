@@ -1,0 +1,46 @@
+-- title
+
+Neopolitan Scratchpad Notes
+
+-- note
+
+This page is a holding ground for notes
+on Neopolitan and Neopoligin. Some are ideas
+that may never get done. Others are drafts
+of documentation for competed features
+awaiting editing. 
+
+
+-- notes
+
+- Current setup is to have an `-- metadata``
+sectiond that gets parsed and values added
+to the top level strcutre of the page object
+for things like _id__, _type__, _date__. 
+
+The idea is those values will only exist there
+in the code but arbitrary attributes can be 
+added that will show up in an attributes section. 
+
+It seems like it should be weird to treat the
+values differnetly but it doesn't. It feels 
+more like sending in raw values but only 
+having to deal with them once they are sorted. 
+
+
+
+
+
+
+-- categories
+-- Neopolitan 
+-- Neopoligin
+
+-- metadata
+-- date: 2023-07-21 12:35:13
+-- id: 2ste81ae
+-- site: aws
+-- type: post
+-- status: scratch 
+
+

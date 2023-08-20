@@ -1,0 +1,79 @@
+-- title
+
+Inline CSS
+
+-- p 
+
+Speaking of CSS, there's a `-- css`neo` section
+to add styles directly from the content. 
+
+-- section/
+-- class: border1
+
+-- h2
+
+Source
+
+-- code/
+
+-- p
+-- class: neoexample
+
+Open your book to the first page
+
+
+-- css 
+
+.neoexample {
+  background-color: #422;
+  border-radius: 1rem;
+}
+
+-- /code
+
+-- h2
+
+Output
+
+
+-- p
+-- class: neoexample
+
+Open your book to the first page
+
+
+-- css 
+
+.neoexample {
+  background-color: #422;
+  border-radius: 0.3rem;
+  margin: 0.3rem;
+  padding: 0.3rem;
+}
+
+-- /section
+
+Each `-- css`neo` section becomes a _script__
+tag just before the close of the _head__ in
+the HTML.
+
+
+
+-- p
+-- class: next_links
+
+Previously: <<link|Nesting|/pages/neo-nesting--2tto2ip9/index.html>> ~
+Next Up: <<link|Inline Scripts|/pages/neo-inline-scripts--2ttuzftz/index.html>>
+
+
+-- categories
+-- Neopolitan 
+
+-- metadata
+-- date: 2023-08-03 12:07:26
+-- id: 2tttlzeh
+-- site: aws
+-- type: neodocs 
+-- status: published
+
+

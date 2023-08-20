@@ -1,0 +1,39 @@
+-- title
+
+Neopolitan -- code/ Section
+
+A section for use when you need to show
+code blocks that include other neopolitan 
+tags. (or just want something explicit
+to see the end point)
+
+-- h2
+
+Example
+
+I can't really show an example of this
+right now, because it involved putting
+an escaped code block inside another 
+one which breaks out of the escape. 
+
+The starting tags look like this:
+
+`-- code/``
+
+`-- /code``
+
+
+-- categories
+-- Neopolitan 
+
+-- groups
+-- Neopolitan Sections
+
+-- metadata
+-- date: 2023-08-01 20:26:05
+-- id: 2tpdkwoy
+-- site: aws
+-- type: neodocs 
+-- status: draft 
+
+

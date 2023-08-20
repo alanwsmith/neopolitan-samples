@@ -1,0 +1,51 @@
+-- title
+
+Neopolitan Shorthand Tags
+
+These are quicker ways to do frequent things:
+
+
+-- code
+-- neo
+
+`code``
+`code`lang`
+`code`lang|class: alfa bravo|id: charlie`
+
+*strong**
+*strong*class: alfa bravo|id: charlie*
+
+_em__
+_em_class: alfa bravo|id: charlie_
+
+-strike--
+-strike-class: alfa bravo|id: charlie-
+
+
+-- notes
+
+
+
+
+- You can't do everything with shorttags. For example, 
+you can't use attributes that have an underscore in
+or a hyphen in strikethru. You'll need to use
+the full &lt;&lt;&gt;&gt; tags for that
+
+- Combining them (e.g. bold italics) is tbd
+
+
+
+
+
+-- categories
+-- Neopolitan 
+
+-- metadata
+-- date: 2023-07-05 18:53:58
+-- id: 2samdn7d
+-- site: aws
+-- type: neodocs 
+-- status: draft 
+
+

@@ -1,0 +1,191 @@
+-- title
+
+Neopolitan Nesting 
+
+-- p
+
+Nesting directly without having to make custom
+components is another fundamental feature of
+the format. It's done with a collection
+of `-- start...`` and `-- end...`` tags
+
+Here's a div that wraps a paragraph section
+
+-- section/
+-- class: border1 flow
+
+-- h3
+
+Source
+
+-- code/
+
+-- div/
+-- class: neoexample
+
+Slide the catch back and open the desk. Slide 
+the tray across the glass top.
+
+Split the log with a quick, sharp blow. Tack the 
+strip of carpet to the worn floor.
+
+-- /div
+
+-- /code
+
+-- h3
+
+HTML
+
+Here's the output:
+
+-- code/
+
+<div class="neoexample">
+  <p>
+    Slide the catch back and open the 
+    desk. Slide the tray across the 
+    glass top.
+  </p>
+  <p>
+    Split the log with a quick, sharp 
+    blow. Tack the strip of carpet to 
+    the worn floor.
+  </p>
+</div>
+
+-- /code
+
+-- /section
+
+-- h2
+
+Deep Nesting
+
+Nesting sections can be put inside of
+other nesting sections the same way 
+_div__ elements can be put inside
+other divs. (It's a little hard to 
+look at without syntax highlighting. 
+I'm working on that.)
+
+
+-- section/
+-- class: border1
+
+-- code/
+
+-- div/ 
+-- class: neoexample
+
+-- div/
+-- class: alfa
+
+Tend the sheep while the dog wanders
+
+-- /div
+
+-- div/
+-- class: bravo 
+
+Throw out the used paper cup and plate
+
+-- /div
+
+-- div/
+-- class: charlie 
+
+Tuck the sheet under the edge of the mat
+
+-- /div
+
+-- /div
+
+-- /code
+
+Apply some CSS to that and you get this
+
+
+-- div/
+-- class: neoexamplediv
+
+-- div/
+-- class: alfa
+
+-- p
+
+Tend the sheep while the dog wanders
+
+-- /div
+
+-- div/
+-- class: bravo 
+
+-- p 
+
+Throw out the used paper cup and plate
+
+-- /div
+
+-- div/
+-- class: charlie 
+
+-- p 
+
+Tuck the sheet under the edge of the mat
+
+-- /div
+
+-- /div
+
+-- /code
+
+-- /section
+
+
+
+-- css
+
+.neoexamplediv {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid #333;
+  padding: 1.4rem;
+  border-radius: 1rem;
+  > .alfa {
+    background-color: #422;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    border-radius: 1rem;
+  }
+  > .bravo {
+    background-color: #242;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    border-radius: 1rem;
+  }
+  > .charlie {
+    background-color: #224;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    border-radius: 1rem;
+  }
+}
+
+-- p
+-- class: next_links
+
+Previously: <<link|Neopolitan Home Page|/neopolitan/index.html>> ~  
+Next Up: <<link|Inline CSS|/pages/neo-inline-css--2tttlzeh/index.html>>
+
+-- categories
+-- Neopolitan 
+
+-- metadata
+-- date: 2023-08-03 11:23:42
+-- id: 2tto2ip9
+-- site: aws
+-- type: neodocs 
+-- status: published
+
+

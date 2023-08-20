@@ -1,0 +1,58 @@
+-- title
+
+Neopolengine Live Reloading
+
+GOAL: Setup a single binary that 
+builds the site and serves it up
+with live reloading. 
+
+For now, this is just a collection of links
+to investigate. 
+
+-- ref
+-- url: https://lib.rs/crates/tower-livereload
+
+-- ref
+-- url: https://lib.rs/crates/tower
+
+-- ref
+-- url: https://lib.rs/crates/livehttpd
+
+-- ref
+-- url: https://lib.rs/crates/actix-web-static-files
+
+-- ref
+-- url: https://lib.rs/crates/actix-files
+
+-- ref
+-- url: https://crates.io/crates/dufs
+
+-- ref
+-- url: https://crates.io/crates/miniserve
+
+-- ref
+-- url: https://crates.io/crates/serve-directory
+
+-- ref
+-- url: https://www.arewewebyet.org/topics/frameworks/
+
+-- ref
+-- url: https://rocket.rs/v0.5-rc/guide/getting-started/
+
+
+
+
+
+
+-- categories
+-- Neopolengine 
+-- Neopolitan  
+
+-- metadata
+-- date: 2023-07-09 02:17:19
+-- id: 2sk7v8rj
+-- site: aws
+-- type: neodocs 
+-- status: draft 
+
+

@@ -1,0 +1,38 @@
+-- title
+
+Neopolitan Title Section
+
+
+-- notes
+
+Some notes about the default implementation:
+
+- The title works like an H1 but with extra features
+
+- The title and it's following paragraphs are wrapped
+in an `<hgroup>`html` tag in the default implementation. 
+
+- Attributes are passed to the overall `<hgroup>`html`
+as compared to an `-> h1`neo` where attributes only 
+affect the `<h1>`html` itself
+
+- The expectation is that there's only one title. 
+
+- The title is also pulled out for access in other
+pages for links
+
+
+-- categories
+-- Neopolitan 
+
+-- groups
+-- Neopolitan Sections
+
+-- metadata
+-- date: 2023-07-01 21:09:37
+-- id: 2rzkdxwm
+-- site: aws
+-- type: neodocs
+-- status: draft 
+
+
